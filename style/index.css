@@ -86,3 +86,22 @@ header {
     min-width: 300px;
     flex-grow: 1;
 }
+
+.projects {
+    display: flex;
+    justify-items: space-evenly;
+    border: 2px solid black;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 20%;
+    margin: 2.5%;
+    text-align: center;
+    min-width: 200px;
+    flex-grow: 1;
+}
+
+.project img{
+    width: 100%;
+}
