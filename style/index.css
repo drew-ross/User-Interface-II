@@ -21,8 +21,27 @@ vertical-align: baseline;
 /* My styling */
 box-sizing: border-box;
 list-style-type: none;
+text-decoration: none;
+color: #e2e2e;
 }
 
+/* Colors and fonts:
+light-orange #FFB387
+tea-green #E1F0C4
+light green #6BAB90
+wintergreen #55917F
+wegne #5E4C5A
+dark grey #2e2e2e
+*/
+
+
+/* Animations */
+@keyframes navItem {
+    from {background-color: white;}
+    from {color: #2e2e2e}
+    to {background-color: #6BAB90;}
+    to {color: white;}
+  }
 /* General Styling */
 
 h1 {
@@ -37,18 +56,40 @@ h2 {
 
 p {
     margin: 1.5% 0;
+    font-size: 1.2rem;
+}
+
+li {
+    font-size: 1.5rem;
+}
+
+li a {
+    border-radius: 2px;
 }
 
 button {
-    background: none;
-    border: 2px solid black;
+    background: white;
+    border: 1px solid #2e2e2e;
+    font-size: 1.2rem;
+    border-radius: 2px;
+}
+
+button:hover {
+    background: #FFB387;
+    color: black;
+    border: 1px solid white;
+}
+
+img {
+    border-radius: 5px;
 }
 
 /* Header */
 
 header {
-    background-color: lightgrey;
+    background-color: #55917F;
     padding: 1%;
+    color: white;
 }
 
 .headerContent {
@@ -61,11 +102,20 @@ nav ul {
     justify-content: flex-start;
 }
 
-nav ul li {
-    background: grey;
+nav ul li a {
+    display: block;
     padding: 10px;
+    background: white;
+    margin: 0 2%;
+    color: #2e2e2e;
 }
 
+nav ul li a:hover {
+    animation-name: navItem;
+    animation-duration: .5s;
+    background: #6BAB90;
+    color: white;
+}
 /* Main */
 
 #main {
@@ -76,8 +126,7 @@ nav ul li {
 /* Top section */
 
 .top {
-    margin: 0 2.5%;
-    padding: 5vh 0 0 0;
+    padding: 5vh 0;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -93,8 +142,14 @@ nav ul li {
     padding: 5%;
 }
 
+.top button {
+    padding: 2%;
+    margin: 1vh 0;
+}
+
 .top div {
     width: 50%;
+    padding: 0 2.5%;
     min-width: 350px;
     flex-grow: 1;
 }
@@ -102,7 +157,7 @@ nav ul li {
 /* Project Section */
 
 .projects {
-    padding: 5vh 0;
+    padding: 0 0 5vh 0;
     display: flex;
     justify-items: space-evenly;
     flex-wrap: wrap;
@@ -125,7 +180,8 @@ nav ul li {
 footer {
     padding: 10vh 0;
     text-align: center;
-    background: lightgrey;
+    background: #5E4C5A;
+    color: white;
 }
 
 footer button {
