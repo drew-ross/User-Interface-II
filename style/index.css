@@ -188,3 +188,9 @@ footer button {
     width: 25%;
     height: 8vh;
 }
+
+#linkedin {
+    display: block;
+    margin: 2vh 0;
+    color: white;
+}
