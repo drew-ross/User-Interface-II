@@ -46,6 +46,10 @@ header, footer {
 
 /* General Styling */
 
+/* html {
+    font-size: 62.5%;
+} */
+
 h1 {
     font-size: 3rem;
     margin: 2% 0;
