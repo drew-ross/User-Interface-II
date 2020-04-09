@@ -9,10 +9,10 @@
 </head>
 
 <body>
-
     <header>
         <div class="headerContent">
             <h1>Drew Ross</h1>
+            <a class="hide-element" href="#main">Skip to main content.</a>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -23,8 +23,9 @@
             </nav>
         </div>
     </header>
-
     <div id="main">
+        <!-- Accessibility item -->
+        <a class="hide-element" href="#projectSection">Skip to the projects.</a>
         <!-- Top section of page after nav -->
         <section class="top">
             <div>
@@ -38,7 +39,10 @@
         </section>
 
         <!-- Area where portfolio projects go, with images and names -->
-        <section class="projects">
+        <section id="projectSection" class="projects">
+
+            <a class="hide-element" href="#contactLinks">Skip to the contact links.</a>
+
             <!-- Any number of projects go here -->
             <div class="project">
                 <img src="https://picsum.photos/300/300?grayscale&random=1" alt="project picture">
@@ -77,7 +81,7 @@
     <!-- Footer with contact button -->
     <footer>
         <h2>Like what you see?</h2>
-        <a href="contact.html"><button>Contact Me</button></a>
+        <a id="contactLinks" href="contact.html"><button>Contact Me</button></a>
         <a id="linkedin" href="https://www.linkedin.com/in/drros/">LinkedIn</a>
     </footer>
 </body>

@@ -29,6 +29,20 @@ dark grey #2e2e2e
 grey green: #6d7d7b
 */
 
+/* Accessibility */
+
+.hide-element {
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
 /* Animations */
 
 @keyframes navItem {
@@ -312,6 +326,6 @@ footer button {
     }
 
     .project {
-        margin: 3vh 0;
+        margin-bottom: 6vh;
     }
 }
