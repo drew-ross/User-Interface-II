@@ -111,6 +111,12 @@ nav ul {
     nav ul {
         justify-content: center;
     }
+    nav li {
+        max-width: 20%;
+    }
+    nav a {
+        font-size: 3vw;
+    }
 }
 
 nav ul li a {
